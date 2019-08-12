@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int x,p;
+	printf("enter the price and discount");
+	scanf("%d %d",&x,&p);
+
+	int total=x;
+	int discount;
+	while(x>0)
+   {
+	discount=x*p/100;
+    x=x-discount;
+	total=total+x;
+	
+	}
+	
+	printf("%d",total);
+	
+	return 0;
+}
